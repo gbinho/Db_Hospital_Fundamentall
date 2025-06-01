@@ -72,11 +72,20 @@ Nesta etapa, realizamos o povoamento do banco de dados para o sistema hospitalar
 
 O povoamento dos dados garante que o banco esteja preparado para os testes e validação da viabilidade do sistema hospitalar.
 
-## PARTE 4 - A Ordem do Alterar
+## PARTE 4 - Alterando o banco de dados
 
-- Alterações nas estruturas e relacionamentos do banco.
-- Criação de entidades relacionais: médico-especialidade, internação-enfermeiro.
-- Ajustes em chaves estrangeiras para garantir integridade referenci
+Nesta etapa, realizamos alterações estruturais e de dados no banco de dados do sistema hospitalar, para refletir mudanças e evoluções no sistema.
+
+### ✔️ Alterações realizadas:
+
+- **Adição da coluna `em_atividade` na tabela `medicos`:**  
+  Essa coluna indica se o médico ainda está atuando no hospital (`sim`) ou se está inativo (`nao`).
+
+- **Atualização dos dados dos médicos:**  
+  - Dois médicos foram atualizados como inativos, simulando desligamento ou aposentadoria.  
+  - Os demais médicos permaneceram como ativos.
+
+
 
 ## PARTE 5 - Consultas
 
