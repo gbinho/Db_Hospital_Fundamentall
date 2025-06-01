@@ -3,63 +3,63 @@ Atividade onde foi desenvolvido um banco de dados de um hospital.
 Sistema de Banco de Dados para Hospital
 Este projeto visa a construção de um sistema de banco de dados relacional para um hospital, abrangendo as funcionalidades de:
 
-Consultas médicas.
+- Consultas médicas.
 
-Cadastro de pacientes, médicos, convênios.
+- Cadastro de pacientes, médicos, convênios.
 
-Emissão de receitas.
+- Emissão de receitas.
 
-Controle de internações.
+- Controle de internações.
 
-Gerenciamento de quartos e enfermagem.
+- Gerenciamento de quartos e enfermagem.
 
 ✅ Parte 1 – Modelagem Inicial: Consultas
 Requisitos:
-Cadastro de médicos (generalistas, especialistas, residentes), com múltiplas especialidades.
+- Cadastro de médicos (generalistas, especialistas, residentes), com múltiplas especialidades.
 
-Cadastro de pacientes e convênios.
+- Cadastro de pacientes e convênios.
 
-Registro de consultas médicas.
+- Registro de consultas médicas.
 
-Emissão informatizada de receitas.
+- Emissão informatizada de receitas.
 
 ✅ Parte 2 – Expansão: Internações
 Requisitos:
 Controle das internações de pacientes.
 
-Gerenciamento de quartos, tipos e valores.
+- Gerenciamento de quartos, tipos e valores.
 
-Cadastro de profissionais de enfermagem.
+- Cadastro de profissionais de enfermagem.
 
-Associação entre médicos, pacientes, quartos e internações.
+- Associação entre médicos, pacientes, quartos e internações.
 
 ✅ Modelo Entidade-Relacionamento (MER e DER)
 O modelo ER foi projetado para refletir a estrutura lógica e física do sistema, contendo as seguintes entidades principais:
 
-Médico
+- Médico
 
-Especialidade
+- Especialidade
 
-Paciente
+- Paciente
 
-Convênio
+- Convênio
 
-Consulta
+- Consulta
 
-Receita
+- Receita
 
-Internação
+- Internação
 
-Quarto
+- Quarto
 
-Tipo de Quarto
+- Tipo de Quarto
 
-Enfermeiro
+- Enfermeiro
 
 ✅ Como usar
-Clone o repositório.
+1. Clone o repositório.
 
-Execute o script SQL script.sql no seu SGBD.
+2. Execute o script SQL script.sql no seu SGBD.
 
-Visualize o diagrama no dbdiagram.io usando o código dbdiagram.txt.
+3. Visualize o diagrama no dbdiagram.io usando o código dbdiagram.txt.
 
