@@ -1,0 +1,114 @@
+Table Especialidade {
+  id_especialidade int [pk, increment]
+  nome varchar(100)
+}
+
+Table Medico {
+  id_medico int [pk, increment]
+  nome varchar(100)
+  cpf varchar(14) [unique]
+  rg varchar(20)
+  data_nascimento date
+  endereco varchar(255)
+  telefone varchar(20)
+  email varchar(100)
+  tipo enum('Generalista', 'Especialista', 'Residente')
+}
+
+Table Medico_Especialidade {
+  id_medico int
+  id_especialidade int
+  Indexes {
+    (id_medico, id_especialidade) [pk]
+  }
+}
+
+Table Convenio {
+  id_convenio int [pk, increment]
+  nome varchar(100)
+  cnpj varchar(18) [unique]
+  tempo_carencia int
+}
+
+Table Paciente {
+  id_paciente int [pk, increment]
+  nome varchar(100)
+  data_nascimento date
+  endereco varchar(255)
+  telefone varchar(20)
+  email varchar(100)
+  cpf varchar(14) [unique]
+  rg varchar(20)
+  id_convenio int
+}
+
+Table Consulta {
+  id_consulta int [pk, increment]
+  data_hora datetime
+  id_medico int
+  id_paciente int
+  id_especialidade int
+  valor decimal(10,2)
+  id_convenio int
+  numero_carteira varchar(50)
+}
+
+Table Receita {
+  id_receita int [pk, increment]
+  id_consulta int
+  data_emissao date
+}
+
+Table Medicamento_Receita {
+  id_medicamento_receita int [pk, increment]
+  id_receita int
+  nome_medicamento varchar(100)
+  quantidade varchar(50)
+  instrucoes_uso text
+}
+
+Table Tipo_Quarto {
+  id_tipo_quarto int [pk, increment]
+  descricao varchar(50)
+  valor_diario decimal(10,2)
+}
+
+Table Quarto {
+  id_quarto int [pk, increment]
+  numeracao varchar(10)
+  id_tipo_quarto int
+}
+
+Table Internacao {
+  id_internacao int [pk, increment]
+  data_entrada date
+  previsao_alta date
+  data_efetiva_alta date
+  descricao_procedimentos text
+  id_paciente int
+  id_medico int
+  id_quarto int
+}
+
+Table Enfermeiro {
+  id_enfermeiro int [pk, increment]
+  nome varchar(100)
+  cpf varchar(14) [unique]
+  coren varchar(20)
+  id_internacao int
+}
+
+Ref: Medico_Especialidade.id_medico > Medico.id_medico
+Ref: Medico_Especialidade.id_especialidade > Especialidade.id_especialidade
+Ref: Paciente.id_convenio > Convenio.id_convenio
+Ref: Consulta.id_medico > Medico.id_medico
+Ref: Consulta.id_paciente > Paciente.id_paciente
+Ref: Consulta.id_especialidade > Especialidade.id_especialidade
+Ref: Consulta.id_convenio > Convenio.id_convenio
+Ref: Receita.id_consulta > Consulta.id_consulta
+Ref: Medicamento_Receita.id_receita > Receita.id_receita
+Ref: Quarto.id_tipo_quarto > Tipo_Quarto.id_tipo_quarto
+Ref: Internacao.id_paciente > Paciente.id_paciente
+Ref: Internacao.id_medico > Medico.id_medico
+Ref: Internacao.id_quarto > Quarto.id_quarto
+Ref: Enfermeiro.id_internacao > Internacao.id_internacao
