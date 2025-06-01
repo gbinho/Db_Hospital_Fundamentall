@@ -56,7 +56,7 @@ O modelo ER foi projetado para refletir a estrutura lógica e física do sistema
 
 - Enfermeiro
 
-![Diagrama(diagrama.png)
+![!\[Diagrama ER\](dia.png))](diagrama.png)
 
 ✅ Como usar
 1. Clone o repositório.
