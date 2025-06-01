@@ -23,6 +23,8 @@ Requisitos:
 
 - Emissão informatizada de receitas.
 
+![!\[Diagrama ER\](dia.png))](diagrama_pt1.png)
+
 ✅ Parte 2 – Expansão: Internações
 Requisitos:
 Controle das internações de pacientes.
@@ -32,6 +34,8 @@ Controle das internações de pacientes.
 - Cadastro de profissionais de enfermagem.
 
 - Associação entre médicos, pacientes, quartos e internações.
+
+![!\[Diagrama ER\](dia.png))](diagrama_pt2.png)
 
 ✅ Modelo Entidade-Relacionamento (MER e DER)
 O modelo ER foi projetado para refletir a estrutura lógica e física do sistema, contendo as seguintes entidades principais:
@@ -56,7 +60,6 @@ O modelo ER foi projetado para refletir a estrutura lógica e física do sistema
 
 - Enfermeiro
 
-![!\[Diagrama ER\](dia.png))](diagrama.png)
 
 ✅ Como usar
 1. Clone o repositório.
