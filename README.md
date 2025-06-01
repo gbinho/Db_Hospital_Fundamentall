@@ -13,7 +13,7 @@ Este projeto visa a construção de um sistema de banco de dados relacional para
 
 - Gerenciamento de quartos e enfermagem.
 
-✅ Parte 1 – Modelagem Inicial: Consultas
+## Parte 1 – Modelagem Inicial: Consultas
 Requisitos:
 - Cadastro de médicos (generalistas, especialistas, residentes), com múltiplas especialidades.
 
@@ -25,7 +25,7 @@ Requisitos:
 
 ![!\[Diagrama ER\](dia.png))](diagrama_pt1.png)
 
-✅ Parte 2 – Expansão: Internações
+## Parte 2 – Expansão: Internações
 Requisitos:
 Controle das internações de pacientes.
 
@@ -37,7 +37,7 @@ Controle das internações de pacientes.
 
 ![!\[Diagrama ER\](dia.png))](diagrama_pt2.png)
 
-PARTE 3 - Alimentando o banco de dados
+## PARTE 3 - Alimentando o banco de dados
 Nesta etapa, realizamos o povoamento do banco de dados para o sistema hospitalar, seguindo as seguintes atividades:
 
 - Inclusão de 10 médicos com diferentes especialidades.
@@ -71,6 +71,27 @@ Nesta etapa, realizamos o povoamento do banco de dados para o sistema hospitalar
 - Inclusão de 10 profissionais de enfermagem, com cada internação associada a pelo menos 2 enfermeiros.
 
 O povoamento dos dados garante que o banco esteja preparado para os testes e validação da viabilidade do sistema hospitalar.
+
+## PARTE 4 - A Ordem do Alterar
+
+- Alterações nas estruturas e relacionamentos do banco.
+- Criação de entidades relacionais: médico-especialidade, internação-enfermeiro.
+- Ajustes em chaves estrangeiras para garantir integridade referenci
+
+## PARTE 5 - Consultas
+
+Neste diretório está o arquivo `parte_5_consultas.sql`, que contém as consultas SQL para simular relatórios e validar o funcionamento do banco do sistema hospitalar.
+
+As consultas retornam dados como:
+- Consultas do ano de 2020 e sob convênio, com valor médio
+- Internações com alta após data prevista
+- Receituário da primeira consulta
+- Consultas de maior e menor valor (sem convênio)
+- Internações com cálculo do valor total conforme diárias do quarto
+- Dados filtrados de internações e consultas conforme critérios específicos
+- Listagem de médicos e enfermeiros com contagem de atendimentos/internações
+- E consultas específicas para testes com nomes, especialidades e datas
+
 
 ✅ Modelo Entidade-Relacionamento (MER e DER)
 O modelo ER foi projetado para refletir a estrutura lógica e física do sistema, contendo as seguintes entidades principais:
