@@ -37,6 +37,7 @@ Controle das internações de pacientes.
 
 ![!\[Diagrama ER\](dia.png))](diagrama_pt2.png)
 
+
 ## PARTE 3 - Alimentando o banco de dados
 Nesta etapa, realizamos o povoamento do banco de dados para o sistema hospitalar, seguindo as seguintes atividades:
 
